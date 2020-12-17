@@ -14,7 +14,7 @@ def enter():
     if count_1 < 3:
         print("You entered incorrect value")
         exit(-1)
-    dots_1 = []
+    coor_1 = []
     for i in range(count_1):
         print("Entering the coordinates of the", i + 1, "vertex")
         try:
@@ -161,7 +161,7 @@ def min_distance_vert(coor_1, coor_2, count_1, count_2):
     return min_distance
 
 
-def min_distance_vert_edge(coor_1, coor_2, count_1, count_2):
+def min_distance_vert_edge(coor_1, coor_2, count_1, count_2):#расстояние между точками одного многоугольника и сторонами другого
     min_distance = distance(coor_1[0], coor_2[0])
     for i in range(count_1):
         for k in range(count_2):
